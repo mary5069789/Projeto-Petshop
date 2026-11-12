@@ -1,0 +1,306 @@
+
+body {
+    background-color: #620918;
+    color: #232121;
+    font-family: 'Times New Roman', Times, serif;
+     text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 ;
+}
+
+.animacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg {
+  overflow: visible;
+}
+svg path#line {
+  fill: none;
+  stroke: #e00000;
+  stroke-width: 2;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  stroke-miterlimit: 4;
+  stroke-dasharray:none;
+  stroke-opacity: 1;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 4s linear infinite;
+}
+svg path#heart {
+  transform-origin: 50% 50%;
+  animation: blink 4s linear infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.0);
+  }
+}
+}
+
+header {
+    background-color: #560514;
+    color: rgb(22, 21, 21);
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+header p {
+    color: #f2dce1;
+    font-size: 17px;
+}
+
+h1, h2, h3 {
+    color: #0f0d0d;
+}
+
+p {
+    line-height: 26px;
+}
+
+a {
+    color: #123d75;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav a {
+    color: rgb(222, 214, 214);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px;
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+
+section {
+    background-color: #620918;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #780d2d;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 25px;
+    margin: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ad5269;
+    transform: translateY(-2px);
+}
+
+a {
+    color: #780d2d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ad5269;
+}
+
+
+table {
+    margin: 25px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0;
+}
+
+th {
+    background-color: #65001f;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #ead8dc;
+}
+
+tr:nth-child(even) {
+    background-color: #f9edef;
+}
+
+tr:hover {
+    background-color: #f3e0e4;
+}
+
+td img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #e5c5cd;
+    margin: 25px auto;
+    width: 85%;
+}
+
+caption {
+    font-weight: center;
+    padding: 10px;
+}
+
+/* A vírgula aplica a mesma regra a th e td. */
+th, td {
+    border: 8px solid #eeebf5;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #d6cac5;
+    color: rgb(241, 229, 229);
+}
+
+tfoot {
+    background-color: #e9e1dd;
+}
+
+
+
+/* 9. FORMULÁRIOS
+   fieldset agrupa os campos; legend é o título desse grupo. */
+fieldset {
+    border: 1px solid #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #e4dcdd;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+form {
+    background-color: rgb(193, 180, 180);
+    width: 400px;
+    padding: 20px;
+    margin: 30px auto;
+    border: 1px solid #dacdcd;
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
+}
+
+/* Mantemos o tamanho natural dos campos e das caixas de seleção. */
+input, select, textarea {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+select, textarea {
+    padding: 8px;
+    border: 1px solid #dcd2d2;
+}
+
+/* 10. BOTÕES */
+button {
+    background-color: #123d75;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #123d75;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0e2a5a;
+    cursor: pointer;
+}
+
+/* 11. RODAPÉ */
+footer {
+    background-color: #123d75;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+
